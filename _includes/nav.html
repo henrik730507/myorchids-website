@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="{% if page.lang == 'sv' %}/sv/{% else %}/{% endif %}">
+            My Orchids
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+                {% if page.lang == 'sv' %}
+                    <!-- Svenska menylänkar -->
+                    <li class="nav-item"><a class="nav-link" href="/sv/#features">Funktioner</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/sv/#contact">Kontakt</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-sm btn-outline-secondary" href="/">English</a>
+                    </li>
+                {% else %}
+                    <!-- Engelska menylänkar (Default) -->
+                    <li class="nav-item"><a class="nav-link" href="/#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-sm btn-outline-secondary" href="/sv/">Svenska</a>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>
