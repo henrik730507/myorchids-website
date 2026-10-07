@@ -14,17 +14,17 @@
             <ul class="navbar-nav ms-auto align-items-center">
                 {% if page.lang == 'sv' %}
                     <!-- Svenska menylänkar -->
-                    <li class="nav-item"><a class="nav-link" href="/sv/#features">Funktioner</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/sv/#contact">Kontakt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ '/sv/#features' | relative_url }}">Funktioner</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ '/sv/#contact' | relative_url }}">Kontakt</a></li>
                     <li class="nav-item ms-lg-3">
-                        <a class="btn btn-sm btn-outline-secondary" href="/">English</a>
+                        <a class="btn btn-sm btn-outline-secondary" href="{{ '/' | relative_url }}">English</a>
                     </li>
                 {% else %}
                     <!-- Engelska menylänkar (Default) -->
-                    <li class="nav-item"><a class="nav-link" href="/#features">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ '/#features' | relative_url }}">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ '/#contact' | relative_url }}">Contact</a></li>
                     <li class="nav-item ms-lg-3">
-                        <a class="btn btn-sm btn-outline-secondary" href="/sv/">Svenska</a>
+                        <a class="btn btn-sm btn-outline-secondary" href="{{ '/sv/' | relative_url }}">Svenska</a>
                     </li>
                 {% endif %}
             </ul>
