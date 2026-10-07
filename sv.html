@@ -4,6 +4,10 @@ title: Appen för dina orkidéer
 lang: sv
 ---
 
+<script>
+    window.basePath = "{{ site.baseurl }}";
+</script>
+
 <!-- HERO SEKTION -->
 <section class="py-5 bg-white border-bottom">
     <div class="container my-5">
@@ -20,7 +24,7 @@ lang: sv
             </div>
             <div class="col-lg-6 text-center">
                 <!-- Ersätt med en bild på din app (t.ex. i en telefon-mockup) -->
-                <img  src="/assets/images/mock_orchid_sv.webp" alt="My Orchids App" class="img-fluid rounded shadow-sm" style="max-height: 500px;">
+                <img  src="{{ '/assets/images/mock_orchid_sv.webp' | relative_url }}" alt="My Orchids App" class="img-fluid rounded shadow-sm" style="max-height: 500px;">
             </div>
         </div>
     </div>

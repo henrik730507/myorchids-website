@@ -4,6 +4,10 @@ title: Your Ultimate Orchid Care Companion
 lang: en
 ---
 
+<script>
+    window.basePath = "{{ site.baseurl }}";
+</script>
+
 <!-- HERO SECTION -->
 <section class="py-5 bg-white border-bottom">
     <div class="container my-5">
@@ -19,7 +23,7 @@ lang: en
                 </div>
             </div>
             <div class="col-lg-6 text-center">
-                <img src="/assets/images/mock_orchid_en.webp" alt="My Orchids App" class="img-fluid rounded shadow-sm" style="max-height: 500px;">
+                <img src="{{ '/assets/images/mock_orchid_en.webp' | relative_url }}" alt="My Orchids App" class="img-fluid rounded shadow-sm" style="max-height: 500px;">
             </div>
         </div>
     </div>
