@@ -7,8 +7,8 @@ description: >-
 
 # URL-inställningar för GitHub Pages
 # Lämna url tom eller sätt till din domän. När du kör lokalt skriver Jekyll över detta automatiskt.
-url: "https://henrik730507.github.io"
-baseurl: "/myorchids-website"
+url: "https://myorchids.se"
+baseurl: ""
 
 # Bygginställningar
 markdown: kramdown
